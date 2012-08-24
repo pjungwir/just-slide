@@ -1,4 +1,4 @@
-# Just Slide
+# Just Slide!
 
 Just Slide! is a jQuery plugin for an image slideshow that puts you in control.
 
