@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<style type="text/css">
+#portal1, #portal2 {
+  width: 240px;
+  height: 194px;
+  position: relative;
+}
+#portal1 img, #portal2 img {
+  display: none;
+}
+#portal1 {
+  margin: 50px 0 0 50px;
+  background: url('img/cat1.jpeg');
+}
+#portal2 {
+  margin: 50px 0 0 200px;
+  background: url('img/dog1.jpeg');
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="jquery.just-slide.js"></script>
+<script type="text/javascript">
+$(function() {
+  $('#portal1').justSlide();
+  $('#portal2').justSlide();
+  setInterval(function() {
+    $('#portal1').nextSlide();
+    $('#portal2').nextSlide();
+  }, 3000);
+});
+</script>
+</head>
+<body>
+  <div id="portal1">
+    <img src="img/cat1.jpeg">
+    <img src="img/cat2.jpeg">
+    <img src="img/cat3.jpeg">
+  </div>
+  <div id="portal2">
+    <img src="img/dog1.jpeg">
+    <img src="img/dog2.jpeg">
+    <img src="img/dog3.jpeg">
+  </div>
+</body>
+</html>
+  
